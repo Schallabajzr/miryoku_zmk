@@ -3,45 +3,18 @@
 
 #define XXX &none
 #define ULK &studio_unlock
-
-
-#define MIRYOKU_MACRO_SCZ_S \
-U_MACRO(u_macro_sc_z_s, \
-  label = U_STRINGIFY(u_macro_sc_z_s); \
-  bindings = <&macro_press &kp RALT>, \
-             <&macro_press &kp LSHIFT>, \
-             <&macro_tap &kp 6>, \
-             <&macro_release &kp LSHIFT>, \
-             <&macro_release &kp RALT>, \
-             <&macro_tap &kp S>; \
-)
-
-#define MIRYOKU_MACRO_SCZ_C \
-U_MACRO(u_macro_sc_z_c, \
-  label = U_STRINGIFY(u_macro_sc_z_c); \
-  bindings = <&macro_press &kp RALT>, \
-             <&macro_press &kp LSHIFT>, \
-             <&macro_tap &kp 6>, \
-             <&macro_release &kp LSHIFT>, \
-             <&macro_release &kp RALT>, \
-             <&macro_tap &kp C>; \
-)
-
-#define MIRYOKU_MACRO_SCZ_Z \
-U_MACRO(u_macro_sc_z_z, \
-  label = U_STRINGIFY(u_macro_sc_z_z); \
-  bindings = <&macro_press &kp RALT>, \
-             <&macro_press &kp LSHIFT>, \
-             <&macro_tap &kp 6>, \
-             <&macro_release &kp LSHIFT>, \
-             <&macro_release &kp RALT>, \
-             <&macro_tap &kp Z>; \
-)
+#define MIRYOKU_EURKEY_SCZ(CODE)                                      \
+    U_MACRO(u_euskey_scz_##CODE, bindings = <&macro_press & kp RALT>, \
+            <&macro_press & kp LSHIFT>,                               \
+            <&macro_tap & kp 6>,                                      \
+            <&macro_release & kp LSHIFT>,                             \
+            <&macro_release & kp RALT>,                               \
+            <&macro_tap & kp CODE>;)
 
 #define  MIRYOKU_LAYER_EURKEY \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
-U_MT(LGUI, A),     U_MT(LALT, R),     U_MT(LCTRL, MIRYOKU_MACRO_SCZ_S),    U_MT(LSHFT, T),    &kp G,             &kp M,             U_MT(LSHFT, N),    U_MT(LCTRL, E),    U_MT(LALT, I),     U_MT(LGUI, O),     \
-U_LT(U_BUTTON, MIRYOKU_MACRO_SCZ_Z), U_MT(RALT, X),     MIRYOKU_MACRO_SCZ_C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_MT(LGUI, A),     U_MT(LALT, R),     U_MT(LCTRL, MIRYOKU_EURKEY_SCZ(S)),    U_MT(LSHFT, T),    &kp G,             &kp M,             U_MT(LSHFT, N),    U_MT(LCTRL, E),    U_MT(LALT, I),     U_MT(LGUI, O),     \
+U_LT(U_BUTTON, MIRYOKU_EURKEY_SCZ(Z)), U_MT(RALT, X),     MIRYOKU_EURKEY_SCZ(C),             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_LAYOUTMAPPING_MEDIA( \
