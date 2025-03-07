@@ -4,6 +4,40 @@
 #define XXX &none
 #define ULK &studio_unlock
 
+
+#define MIRYOKU_MACRO_SCZ_S \
+U_MACRO(u_macro_sc_z_s, \
+  label = U_STRINGIFY(u_macro_sc_z_s); \
+  bindings = <&macro_press &kp RALT>, \
+             <&macro_press &kp LSHIFT>, \
+             <&macro_tap &kp 6>, \
+             <&macro_release &kp LSHIFT>, \
+             <&macro_release &kp RALT>, \
+             <&macro_tap &kp S>; \
+)
+
+#define MIRYOKU_MACRO_SCZ_C \
+U_MACRO(u_macro_sc_z_c, \
+  label = U_STRINGIFY(u_macro_sc_z_c); \
+  bindings = <&macro_press &kp RALT>, \
+             <&macro_press &kp LSHIFT>, \
+             <&macro_tap &kp 6>, \
+             <&macro_release &kp LSHIFT>, \
+             <&macro_release &kp RALT>, \
+             <&macro_tap &kp C>; \
+)
+
+#define MIRYOKU_MACRO_SCZ_Z \
+U_MACRO(u_macro_sc_z_z, \
+  label = U_STRINGIFY(u_macro_sc_z_z); \
+  bindings = <&macro_press &kp RALT>, \
+             <&macro_press &kp LSHIFT>, \
+             <&macro_tap &kp 6>, \
+             <&macro_release &kp LSHIFT>, \
+             <&macro_release &kp RALT>, \
+             <&macro_tap &kp Z>; \
+)
+
 #define  MIRYOKU_LAYER_EURKEY \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 U_MT(LGUI, A),     U_MT(LALT, R),     U_MT(LCTRL, MIRYOKU_MACRO_SCZ_S),    U_MT(LSHFT, T),    &kp G,             &kp M,             U_MT(LSHFT, N),    U_MT(LCTRL, E),    U_MT(LALT, I),     U_MT(LGUI, O),     \
@@ -48,35 +82,3 @@ MIRYOKU_X(EURKEY,   "EurKey")
 #define U_FUN         9
 #define U_EURKEY      10
 
-#define MIRYOKU_MACRO_SCZ_S \
-U_MACRO(u_macro_sc_z_s, \
-  label = U_STRINGIFY(u_macro_sc_z_s); \
-  bindings = <&macro_press &kp RALT>, \
-             <&macro_press &kp LSHIFT>, \
-             <&macro_tap &kp 6>, \
-             <&macro_release &kp LSHIFT>, \
-             <&macro_release &kp RALT>, \
-             <&macro_tap &kp S>; \
-)
-
-#define MIRYOKU_MACRO_SCZ_C \
-U_MACRO(u_macro_sc_z_c, \
-  label = U_STRINGIFY(u_macro_sc_z_c); \
-  bindings = <&macro_press &kp RALT>, \
-             <&macro_press &kp LSHIFT>, \
-             <&macro_tap &kp 6>, \
-             <&macro_release &kp LSHIFT>, \
-             <&macro_release &kp RALT>, \
-             <&macro_tap &kp C>; \
-)
-
-#define MIRYOKU_MACRO_SCZ_Z \
-U_MACRO(u_macro_sc_z_z, \
-  label = U_STRINGIFY(u_macro_sc_z_z); \
-  bindings = <&macro_press &kp RALT>, \
-             <&macro_press &kp LSHIFT>, \
-             <&macro_tap &kp 6>, \
-             <&macro_release &kp LSHIFT>, \
-             <&macro_release &kp RALT>, \
-             <&macro_tap &kp Z>; \
-)
