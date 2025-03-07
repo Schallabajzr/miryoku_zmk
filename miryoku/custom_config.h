@@ -4,7 +4,7 @@
 #define XXX &none
 #define ULK &studio_unlock
 #define MIRYOKU_EURKEY_SCZ(CODE)                                      \
-    U_MACRO(u_euskey_scz_##CODE, bindings = <&macro_press & kp RALT>, \
+    U_MACRO(u_eurkey_scz_##CODE, bindings = <&macro_press & kp RALT>, \
             <&macro_press & kp LSHIFT>,                               \
             <&macro_tap & kp 6>,                                      \
             <&macro_release & kp LSHIFT>,                             \
