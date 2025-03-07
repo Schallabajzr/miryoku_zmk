@@ -49,9 +49,9 @@ MIRYOKU_X(EURKEY,   "EurKey")
 #define U_EURKEY      10
 
 enum custom_keycodes {
-  S_CH_MACRO = SAFE_RANGE,  // for š
-  C_CH_MACRO,               // for č
-  Z_CH_MACRO,               // for ž
+  S_CH_MACRO = SAFE_RANGE, 
+  C_CH_MACRO, 
+  Z_CH_MACRO,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
