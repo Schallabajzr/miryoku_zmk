@@ -48,47 +48,11 @@ MIRYOKU_X(EURKEY,   "EurKey")
 #define U_FUN         9
 #define U_EURKEY      10
 
-enum custom_keycodes {
-  S_CH_MACRO = SAFE_RANGE, 
-  C_CH_MACRO, 
-  Z_CH_MACRO,
-};
+#define MACRO_SCZ_S \
+U_MACRO(u_scz_s, bindings = <&macro_press &kp RALT>, <&macro_press &kp LSHIFT>, <&macro_tap &kp 6>, <&macro_release &kp LSHIFT>, <&macro_release &kp RALT>, <&macro_tap &kp S>;)
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        // Macros for caron accents (for š, č, ž)
-        case S_CH_MACRO:
-            if (record->event.pressed) {
-                // Send AltGr+Shift+6 (to get ˇ) then S to form š
-                register_code(KC_RALT);
-                register_code(KC_LSFT);
-                tap_code(KC_6);
-                unregister_code(KC_LSFT);
-                unregister_code(KC_RALT);
-                tap_code(KC_S);
-            }
-            return false;
-        case C_CH_MACRO:
-            if (record->event.pressed) {
-                register_code(KC_RALT);
-                register_code(KC_LSFT);
-                tap_code(KC_6);
-                unregister_code(KC_LSFT);
-                unregister_code(KC_RALT);
-                tap_code(KC_C);
-            }
-            return false;
-        case Z_CH_MACRO:
-            if (record->event.pressed) {
-                register_code(KC_RALT);
-                register_code(KC_LSFT);
-                tap_code(KC_6);
-                unregister_code(KC_LSFT);
-                unregister_code(KC_RALT);
-                tap_code(KC_Z);
-            }
-            return false;
-        default:
-            return true;
-    }
-}
+#define MACRO_SCZ_C \
+U_MACRO(u_scz_c, bindings = <&macro_press &kp RALT>, <&macro_press &kp LSHIFT>, <&macro_tap &kp 6>, <&macro_release &kp LSHIFT>, <&macro_release &kp RALT>, <&macro_tap &kp C>;)
+
+#define MACRO_SCZ_Z \
+U_MACRO(u_scz_z, bindings = <&macro_press &kp RALT>, <&macro_press &kp LSHIFT>, <&macro_tap &kp 6>, <&macro_release &kp LSHIFT>, <&macro_release &kp RALT>, <&macro_tap &kp Z>;)
