@@ -52,9 +52,6 @@ enum custom_keycodes {
   S_CH_MACRO = SAFE_RANGE,  // for š
   C_CH_MACRO,               // for č
   Z_CH_MACRO,               // for ž
-  A_UML_MACRO,              // for ä
-  O_UML_MACRO,              // for ö
-  U_UML_MACRO               // for ü
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -91,34 +88,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 tap_code(KC_Z);
             }
             return false;
-            
-        // Macros for umlaut vowels (ä, ö, ü)
-        case A_UML_MACRO:
-            if (record->event.pressed) {
-                // Send AltGr+Quote (assumed to produce the diaeresis dead key) then A
-                register_code(KC_RALT);
-                tap_code(KC_QUOT);
-                unregister_code(KC_RALT);
-                tap_code(KC_A);
-            }
-            return false;
-        case O_UML_MACRO:
-            if (record->event.pressed) {
-                register_code(KC_RALT);
-                tap_code(KC_QUOT);
-                unregister_code(KC_RALT);
-                tap_code(KC_O);
-            }
-            return false;
-        case U_UML_MACRO:
-            if (record->event.pressed) {
-                register_code(KC_RALT);
-                tap_code(KC_QUOT);
-                unregister_code(KC_RALT);
-                tap_code(KC_U);
-            }
-            return false;
-            
         default:
             return true;
     }
