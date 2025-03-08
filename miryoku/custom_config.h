@@ -4,23 +4,6 @@
 #define XXX &none
 #define ULK &studio_unlock
 
-/ {
-    macros {
-        macro_eurkey: macro_eurkey {
-                compatible = "zmk,behavior-macro-one-param";
-                #binding-cells = <1>;
-                bindings =
-                    <&macro_press &kp LSHFT>,       /* Press Left Shift */
-                    <&macro_press &kp RALT>,        /* Press Right Alt */
-                    <&macro_tap   &kp N6>,          /* Tap key '6' */
-                    <&macro_release &kp RALT>,      /* Release Right Alt */
-                    <&macro_release &kp LSHFT>,     /* Release Left Shift */
-                    <&macro_param_1to1>,            /* Forward the macro parameter */
-                    <&kp MACRO_PLACEHOLDER>;        /* Placeholder to be replaced at runtime */
-              };
-    };
-};;
-
 #define MIRYOKU_LAYER_EURKEY                                          \
     XXX, XXX, XXX, XXX, XXX, XXX, XXX, XXX, XXX, XXX,                 \
         XXX, XXX, &macro_eurkey S, XXX, XXX, XXX, XXX, XXX, XXX, XXX,             \
