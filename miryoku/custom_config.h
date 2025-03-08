@@ -54,5 +54,4 @@ MIRYOKU_X(EURKEY,   "EurKey")
 #define U_SYM         8
 #define U_FUN         9
 #define U_EURKEY      10
-#define U_EURKEY      10
 
