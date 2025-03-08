@@ -9,6 +9,8 @@
     macros {
         macro_eurkey: macro_eurkey {
                 compatible = "zmk,behavior-macro-one-param";
+                wait-ms = <40>;
+                tap-ms = <40>;
                 #binding-cells = <1>;
                 bindings =
                     <&macro_press &kp LSHFT>,       /* Press Left Shift */
