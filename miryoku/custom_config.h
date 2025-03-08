@@ -3,6 +3,7 @@
 
 #define XXX &none
 #define ULK &studio_unlock
+#define U_EURKEY(TAP) &macro_eurkey TAP
 
 #define  MIRYOKU_LAYER_EURKEY \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
