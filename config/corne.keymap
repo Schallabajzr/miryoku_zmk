@@ -4,3 +4,9 @@
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/42/corne.h"
 #include "../miryoku/miryoku.dtsi"
+
+macro_eurkey: macro_eurkey {
+  compatible = "zmk,behavior-macro-one-param";
+  #binding-cells = <1>;
+  bindings = <&kp RA(LS(N6))>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+};
