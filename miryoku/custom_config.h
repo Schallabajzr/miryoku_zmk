@@ -3,13 +3,6 @@
 
 #define XXX &none
 #define ULK &studio_unlock
-#define MIRYOKU_EURKEY_SCZ(CODE)                                      \
-    U_MACRO(u_eurkey_scz_##CODE, bindings = <&macro_press &kp RALT>, \
-            <&macro_press &kp LSHIFT>,                               \
-            <&macro_tap &kp 6>,                                      \
-            <&macro_release &kp LSHIFT>,                             \
-            <&macro_release &kp RALT>,                               \
-            <&macro_tap &kp CODE>;)
 
 #define  MIRYOKU_LAYER_EURKEY \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
@@ -54,4 +47,3 @@ MIRYOKU_X(EURKEY,   "EurKey")
 #define U_SYM         8
 #define U_FUN         9
 #define U_EURKEY      10
-
