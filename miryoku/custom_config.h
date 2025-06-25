@@ -4,10 +4,7 @@
 #define XXX &none
 #define ULK &studio_unlock
 
-#define EURKEY_CHARON(CODE) \
-U_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &kp CODE>, <&macro_release &kp CODE>;)
-
-#define S_CARON     EURKEY_CHARON(s)
+#define S_CARON     XXX
 #define C_CARON     XXX
 #define Z_CARON     XXX
 #define O_UMLAUT    XXX
