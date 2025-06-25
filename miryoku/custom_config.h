@@ -3,30 +3,12 @@
 
 #define XXX &none
 #define ULK &studio_unlock
-#define EUR_MACRO(NAME, ...) \
-  mcr_##NAME: mcr_##NAME { \
-    label = EXPAND_AND_STRINGIFY(mcr_##NAME); \
-    compatible = "zmk,behavior-macro"; \
-    #binding-cells = <0>; \
-    wait-ms = <20>; \
-    tap-ms = <10>; \
-    bindings = <__VA_ARGS__>; \
-  };
 
-
-EUR_MACRO(u_macro_s_caron, &kp RALT, &kp LSFT, &kp 6, &kp LSFT, &kp RALT, &kp S)
-EUR_MACRO(u_macro_c_caron, &kp RALT, &kp LSFT, &kp 6, &kp LSFT, &kp RALT, &kp C)
-EUR_MACRO(u_macro_z_caron, &kp RALT, &kp LSFT, &kp 6, &kp LSFT, &kp RALT, &kp Z)
-EUR_MACRO(u_macro_o_umlaut, &kp RALT, &kp LSFT, &kp QUOTE, &kp LSFT, &kp RALT, &kp O)
-EUR_MACRO(u_macro_u_umlaut, &kp RALT, &kp LSFT, &kp QUOTE, &kp LSFT, &kp RALT, &kp U)
-
-
-#define S_CARON XXX
-#define C_CARON XXX
-#define Z_CARON XXX
-#define O_UMLAUT XXX
-#define U_UMLAUT XXX
-
+#define S_CARON     &u_macro_s_caron
+#define C_CARON     &u_macro_c_caron
+#define Z_CARON     &u_macro_z_caron
+#define O_UMLAUT    &u_macro_o_umlaut
+#define U_UMLAUT    &u_macro_u_umlaut
 
 #define MIRYOKU_LAYER_EURKEY \
 XXX,XXX,XXX,XXX,XXX,XXX,XXX,U_UMLAUT,XXX,XXX, \
