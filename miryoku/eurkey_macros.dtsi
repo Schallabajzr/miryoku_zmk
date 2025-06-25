@@ -3,7 +3,7 @@
 		compatible = "zmk,macros";
 
 		carons: caron_macro {
-			compatible = "zmk,behavior-macro";
+			compatible = "zmk,behavior-macro-one-param";
 			label = "Caron Macro";
 			#binding-cells = <1>;
 			wait-ms = <20>;
@@ -17,7 +17,7 @@
 		};
 
 		umlauts: umlaut_macro {
-			compatible = "zmk,behavior-macro";
+			compatible = "zmk,behavior-macro-one-param";
 			label = "Umlaut Macro";
 			#binding-cells = <1>;
 			wait-ms = <20>;
