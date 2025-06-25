@@ -3,55 +3,13 @@
 
 #define XXX &none
 #define ULK &studio_unlock
-// miryoku_zmk_config.h
 
-#define MIRYOKU_BEHAVIORS_EXTRA \
-    mcr_u_macro_s_caron: u_macro_s_caron { \
-      label = "u_macro_s_caron"; \
-      compatible = "zmk,behavior-macro"; \
-      #binding-cells = <0>; \
-      wait-ms = <20>; \
-      tap-ms = <10>; \
-      bindings = <&kp RALT>, <&kp LSFT>, <&kp N6>, <&kp LSFT>, <&kp RALT>, <&kp S>; \
-    }; \
-    mcr_u_macro_c_caron: u_macro_c_caron { \
-      label = "u_macro_c_caron"; \
-      compatible = "zmk,behavior-macro"; \
-      #binding-cells = <0>; \
-      wait-ms = <20>; \
-      tap-ms = <10>; \
-      bindings = <&kp RALT>, <&kp LSFT>, <&kp N6>, <&kp LSFT>, <&kp RALT>, <&kp C>; \
-    }; \
-    mcr_u_macro_z_caron: u_macro_z_caron { \
-      label = "u_macro_z_caron"; \
-      compatible = "zmk,behavior-macro"; \
-      #binding-cells = <0>; \
-      wait-ms = <20>; \
-      tap-ms = <10>; \
-      bindings = <&kp RALT>, <&kp LSFT>, <&kp N6>, <&kp LSFT>, <&kp RALT>, <&kp Z>; \
-    }; \
-    mcr_u_macro_o_umlaut: u_macro_o_umlaut { \
-      label = "u_macro_o_umlaut"; \
-      compatible = "zmk,behavior-macro"; \
-      #binding-cells = <0>; \
-      wait-ms = <20>; \
-      tap-ms = <10>; \
-      bindings = <&kp RALT>, <&kp LSFT>, <&kp SQT>, <&kp LSFT>, <&kp RALT>, <&kp O>; \
-    }; \
-    mcr_u_macro_u_umlaut: u_macro_u_umlaut { \
-      label = "u_macro_u_umlaut"; \
-      compatible = "zmk,behavior-macro"; \
-      #binding-cells = <0>; \
-      wait-ms = <20>; \
-      tap-ms = <10>; \
-      bindings = <&kp RALT>, <&kp LSFT>, <&kp SQT>, <&kp LSFT>, <&kp RALT>, <&kp U>; \
-    };
 
-#define S_CARON     &u_macro_s_caron
-#define C_CARON     &u_macro_c_caron
-#define Z_CARON     &u_macro_z_caron
-#define O_UMLAUT    &u_macro_o_caron
-#define U_UMLAUT    &u_macro_u_caron
+#define S_CARON     XXX
+#define C_CARON     XXX
+#define Z_CARON     XXX
+#define O_UMLAUT    XXX
+#define U_UMLAUT    XXX
 
 #define MIRYOKU_LAYER_EURKEY \
 XXX,XXX,XXX,XXX,XXX,XXX,XXX,U_UMLAUT,XXX,XXX, \
