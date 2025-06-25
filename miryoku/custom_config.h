@@ -4,74 +4,18 @@
 #define XXX &none
 #define ULK &studio_unlock
 
-#define U_MACRO_S_CARON \
-U_MACRO(macro_s_caron, \
-  bindings = < \
-    &kp RALT \
-    &kp LSFT \
-    &kp 6 \
-    &kp LSFT \
-    &kp RALT \
-    &kp S \
-  >;)
+U_MACRO(u_macro_s_caron, bindings = <&kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp S>;)
+U_MACRO(u_macro_c_caron, bindings = <&kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp C>;)
+U_MACRO(u_macro_z_caron, bindings = <&kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp Z>;)
+U_MACRO(u_macro_o_umlaut, bindings = <&kp RALT &kp LSFT &kp QUOTE &kp LSFT &kp RALT &kp O>;)
+U_MACRO(u_macro_u_umlaut, bindings = <&kp RALT &kp LSFT &kp QUOTE &kp LSFT &kp RALT &kp U>;)
 
-#define U_MACRO_C_CARON \
-U_MACRO(macro_c_caron, \
-  bindings = < \
-    &kp RALT \
-    &kp LSFT \
-    &kp 6 \
-    &kp LSFT \
-    &kp RALT \
-    &kp C \
-  >;)
+#define S_CARON &u_macro_s_caron
+#define C_CARON &u_macro_c_caron
+#define Z_CARON &u_macro_z_caron
+#define O_UMLAUT &u_macro_o_umlaut
+#define U_UMLAUT &u_macro_u_umlaut
 
-#define U_MACRO_Z_CARON \
-U_MACRO(macro_z_caron, \
-  bindings = < \
-    &kp RALT \
-    &kp LSFT \
-    &kp 6 \
-    &kp LSFT \
-    &kp RALT \
-    &kp Z \
-  >;)
-
-#define U_MACRO_O_UMLAUT \
-U_MACRO(macro_o_umlaut, \
-  bindings = < \
-    &kp RALT \
-    &kp LSFT \
-    &kp QUOTE \
-    &kp LSFT \
-    &kp RALT \
-    &kp O \
-  >;)
-
-#define U_MACRO_U_UMLAUT \
-U_MACRO(macro_u_umlaut, \
-  bindings = < \
-    &kp RALT \
-    &kp LSFT \
-    &kp QUOTE \
-    &kp LSFT \
-    &kp RALT \
-    &kp U \
-  >;)
-
-// Inject macros into devicetree
-U_MACRO_S_CARON
-U_MACRO_C_CARON
-U_MACRO_Z_CARON
-U_MACRO_O_UMLAUT
-U_MACRO_U_UMLAUT
-
-// Aliases for layout use
-#define S_CARON       &macro_s_caron
-#define C_CARON       &macro_c_caron
-#define Z_CARON       &macro_z_caron
-#define O_UMLAUT      &macro_o_umlaut
-#define U_UMLAUT      &macro_u_umlaut
 
 #define MIRYOKU_LAYER_EURKEY \
 XXX,XXX,XXX,XXX,XXX,XXX,XXX,U_UMLAUT,XXX,XXX, \
