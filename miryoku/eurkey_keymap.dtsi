@@ -1,0 +1,68 @@
+/ {
+	macros {
+		macro_s_caron: macro_s_caron {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <
+							   &kp RALT
+							   &kp LSFT
+							   &kp 6
+							   &kp LSFT
+							   &kp RALT
+							   &kp S
+					   >;
+		};
+
+		macro_c_caron: macro_c_caron {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <
+							   &kp RALT
+							   &kp LSFT
+							   &kp 6
+							   &kp LSFT
+							   &kp RALT
+							   &kp C
+					   >;
+		};
+
+		macro_z_caron: macro_z_caron {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <
+							   &kp RALT
+							   &kp LSFT
+							   &kp 6
+							   &kp LSFT
+							   &kp RALT
+							   &kp Z
+					   >;
+		};
+
+		macro_o_umlaut: macro_o_umlaut {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <
+							   &kp RALT
+							   &kp LSFT
+							   &kp QUOTE
+							   &kp LSFT
+							   &kp RALT
+							   &kp O
+					   >;
+		};
+
+		macro_u_umlaut: macro_u_umlaut {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <
+							   &kp RALT
+							   &kp LSFT
+							   &kp QUOTE
+							   &kp LSFT
+							   &kp RALT
+							   &kp U
+					   >;
+		};
+	};
+};
