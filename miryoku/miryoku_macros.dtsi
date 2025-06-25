@@ -6,7 +6,7 @@
 			#binding-cells = <0>;
 			wait-ms = <20>;
 			tap-ms = <10>;
-			bindings = <&kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp S>;
+			bindings = <&kp RALT>, <&kp LSFT>, <&kp 6>, <&kp LSFT>, <&kp RALT>, <&kp S>;
 		};
 
 		mcr_u_macro_c_caron: u_macro_c_caron {
@@ -15,7 +15,7 @@
 			#binding-cells = <0>;
 			wait-ms = <20>;
 			tap-ms = <10>;
-			bindings = <&kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp C>;
+			bindings = <&kp RALT>, <&kp LSFT>, <&kp 6>, <&kp LSFT>, <&kp RALT>, <&kp C>;
 		};
 
 		mcr_u_macro_z_caron: u_macro_z_caron {
@@ -24,7 +24,7 @@
 			#binding-cells = <0>;
 			wait-ms = <20>;
 			tap-ms = <10>;
-			bindings = <&kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp Z>;
+			bindings = <&kp RALT>, <&kp LSFT>, <&kp 6>, <&kp LSFT>, <&kp RALT>, <&kp Z>;
 		};
 
 		mcr_u_macro_o_umlaut: u_macro_o_umlaut {
@@ -33,7 +33,7 @@
 			#binding-cells = <0>;
 			wait-ms = <20>;
 			tap-ms = <10>;
-			bindings = <&kp RALT &kp LSFT &kp QUOTE &kp LSFT &kp RALT &kp O>;
+			bindings = <&kp RALT>, <&kp LSFT>, <&kp QUOTE>, <&kp LSFT>, <&kp RALT>, <&kp O>;
 		};
 
 		mcr_u_macro_u_umlaut: u_macro_u_umlaut {
@@ -42,7 +42,7 @@
 			#binding-cells = <0>;
 			wait-ms = <20>;
 			tap-ms = <10>;
-			bindings = <&kp RALT &kp LSFT &kp QUOTE &kp LSFT &kp RALT &kp U>;
+			bindings = <&kp RALT>, <&kp LSFT>, <&kp QUOTE>, <&kp LSFT>, <&kp RALT>, <&kp U>;
 		};
 	};
 };
