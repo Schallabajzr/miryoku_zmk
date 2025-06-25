@@ -15,7 +15,7 @@
 
 EUR_MACRO(u_macro_s_caron, &kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp S)
 EUR_MACRO(u_macro_c_caron, &kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp C)
-EUR_MACRO(u_macro_z_caron, &kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp Z>)
+EUR_MACRO(u_macro_z_caron, &kp RALT &kp LSFT &kp 6 &kp LSFT &kp RALT &kp Z)
 EUR_MACRO(u_macro_o_umlaut, &kp RALT &kp LSFT &kp QUOTE &kp LSFT &kp RALT &kp O)
 EUR_MACRO(u_macro_u_umlaut, &kp RALT &kp LSFT &kp QUOTE &kp LSFT &kp RALT &kp U)
 
