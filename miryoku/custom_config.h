@@ -4,12 +4,11 @@
 #define XXX &none
 #define ULK &studio_unlock
 
-#define S_CARON     &s_caron
-#define C_CARON     &c_caron
-#define Z_CARON     &z_caron
-#define O_UMLAUT    &o_umlaut
-#define U_UMLAUT    &u_umlaut
-
+#define S_CARON     &carons S
+#define C_CARON     &carons C
+#define Z_CARON     &carons Z
+#define O_UMLAUT    &umlauts O
+#define U_UMLAUT    &umlauts U
 
 #define MIRYOKU_LAYER_EURKEY \
 XXX,XXX,XXX,XXX,XXX,XXX,XXX,U_UMLAUT,XXX,XXX, \
