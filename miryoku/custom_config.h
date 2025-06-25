@@ -3,65 +3,6 @@
 
 #define XXX &none
 #define ULK &studio_unlock
-// s with caron (š)
-ZMK_MACRO(s_caron,
-    wait-ms = <20>;
-    tap-ms = <30>;
-    bindings = <
-        &macro_press &kp RALT &kp LSHFT
-        &macro_tap &kp N6
-        &macro_release &kp RALT &kp LSHFT
-        &kp S
-    >;
-);
-
-// c with caron (č)
-ZMK_MACRO(c_caron,
-    wait-ms = <20>;
-    tap-ms = <30>;
-    bindings = <
-        &macro_press &kp RALT &kp LSHFT
-        &macro_tap &kp N6
-        &macro_release &kp RALT &kp LSHFT
-        &kp C
-    >;
-);
-
-// z with caron (ž)
-ZMK_MACRO(z_caron,
-    wait-ms = <20>;
-    tap-ms = <30>;
-    bindings = <
-        &macro_press &kp RALT &kp LSHFT
-        &macro_tap &kp N6
-        &macro_release &kp RALT &kp LSHFT
-        &kp Z
-    >;
-);
-
-// o with umlaut (ö)
-ZMK_MACRO(o_umlaut,
-    wait-ms = <20>;
-    tap-ms = <30>;
-    bindings = <
-        &macro_press &kp RALT &kp LSHFT
-        &macro_tap &kp APOS
-        &macro_release &kp RALT &kp LSHFT
-        &kp O
-    >;
-);
-
-// u with umlaut (ü)
-ZMK_MACRO(u_umlaut,
-    wait-ms = <20>;
-    tap-ms = <30>;
-    bindings = <
-        &macro_press &kp RALT &kp LSHFT
-        &macro_tap &kp APOS
-        &macro_release &kp RALT &kp LSHFT
-        &kp U
-    >;
-);
 
 #define S_CARON     &s_caron
 #define C_CARON     &c_caron

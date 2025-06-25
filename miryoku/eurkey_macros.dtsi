@@ -1,0 +1,75 @@
+/ {
+	macros {
+		compatible = "zmk,macros";
+
+		s_caron: s_caron {
+			compatible = "zmk,behavior-macro";
+			label = "S Caron";
+			#binding-cells = <0>;
+			wait-ms = <20>;
+			tap-ms = <30>;
+			bindings = <
+							   &macro_press &kp RALT &kp LSHFT
+							   &macro_tap &kp N6
+							   &macro_release &kp RALT &kp LSHFT
+							   &kp S
+					   >;
+		};
+
+		c_caron: c_caron {
+			compatible = "zmk,behavior-macro";
+			label = "C Caron";
+			#binding-cells = <0>;
+			wait-ms = <20>;
+			tap-ms = <30>;
+			bindings = <
+							   &macro_press &kp RALT &kp LSHFT
+							   &macro_tap &kp N6
+							   &macro_release &kp RALT &kp LSHFT
+							   &kp C
+					   >;
+		};
+
+		z_caron: z_caron {
+			compatible = "zmk,behavior-macro";
+			label = "Z Caron";
+			#binding-cells = <0>;
+			wait-ms = <20>;
+			tap-ms = <30>;
+			bindings = <
+							   &macro_press &kp RALT &kp LSHFT
+							   &macro_tap &kp N6
+							   &macro_release &kp RALT &kp LSHFT
+							   &kp Z
+					   >;
+		};
+
+		o_umlaut: o_umlaut {
+			compatible = "zmk,behavior-macro";
+			label = "O Umlaut";
+			#binding-cells = <0>;
+			wait-ms = <20>;
+			tap-ms = <30>;
+			bindings = <
+							   &macro_press &kp RALT &kp LSHFT
+							   &macro_tap &kp APOS
+							   &macro_release &kp RALT &kp LSHFT
+							   &kp O
+					   >;
+		};
+
+		u_umlaut: u_umlaut {
+			compatible = "zmk,behavior-macro";
+			label = "U Umlaut";
+			#binding-cells = <0>;
+			wait-ms = <20>;
+			tap-ms = <30>;
+			bindings = <
+							   &macro_press &kp RALT &kp LSHFT
+							   &macro_tap &kp APOS
+							   &macro_release &kp RALT &kp LSHFT
+							   &kp U
+					   >;
+		};
+	};
+};
