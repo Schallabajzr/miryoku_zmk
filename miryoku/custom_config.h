@@ -4,19 +4,68 @@
 #define XXX &none
 #define ULK &studio_unlock
 
-// Dead-key for caron (ˇ) — RAlt+Shift+6
-#define DEAD_CARON    &mt(MOD_RALT|MOD_LSFT, 6)
+// Caron (ˇ) dead-key + base letter
+U_MACRO(macro_s_caron,
+  bindings = <
+    &kp RALT   // press Right-Alt (starts dead-key sequence)
+    &kp LSFT   // press Shift
+    &kp 6      // tap “6” → ˇ dead-key
+    &kp LSFT   // release Shift
+    &kp RALT   // release Right-Alt
+    &kp S      // tap “s” → š
+  >;
+)
 
-// Dead-key for umlaut (¨) — RAlt+Shift+'
-#define DEAD_UMLAUT   &mt(MOD_RALT|MOD_LSFT, QUOTE)
+U_MACRO(macro_c_caron,
+  bindings = <
+    &kp RALT
+    &kp LSFT
+    &kp 6
+    &kp LSFT
+    &kp RALT
+    &kp C      // č
+  >;
+)
 
-// Combined sequences:
-#define S_CARON       DEAD_CARON, &kp S   // š
-#define C_CARON       DEAD_CARON, &kp C   // č
-#define Z_CARON       DEAD_CARON, &kp Z   // ž
+U_MACRO(macro_z_caron,
+  bindings = <
+    &kp RALT
+    &kp LSFT
+    &kp 6
+    &kp LSFT
+    &kp RALT
+    &kp Z      // ž
+  >;
+)
 
-#define O_UMLAUT      DEAD_UMLAUT, &kp O  // ö
-#define U_UMLAUT      DEAD_UMLAUT, &kp U  // ü
+// Umlaut (¨) dead-key + base letter
+U_MACRO(macro_o_umlaut,
+  bindings = <
+    &kp RALT   // hold Right-Alt
+    &kp LSFT   // hold Shift
+    &kp QUOTE  // tap ' → ¨ dead-key
+    &kp LSFT   // release Shift
+    &kp RALT   // release Right-Alt
+    &kp O      // tap “o” → ö
+  >;
+)
+
+U_MACRO(macro_u_umlaut,
+  bindings = <
+    &kp RALT
+    &kp LSFT
+    &kp QUOTE
+    &kp LSFT
+    &kp RALT
+    &kp U      // ü
+  >;
+)
+
+#define S_CARON       &macro_s_caron
+#define C_CARON       &macro_c_caron
+#define Z_CARON       &macro_z_caron
+#define O_UMLAUT      &macro_o_umlaut
+#define U_UMLAUT      &macro_u_umlaut
 
 
 #define MIRYOKU_LAYER_EURKEY \
