@@ -8,37 +8,47 @@
     macros {
         u_macro_s_caron: u_macro_s_caron {
             compatible = "zmk,behavior-macro";
-            label = "S_CARON";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RALT>, <&macro_tap &kp S>, <&macro_release &kp RALT>, <&macro_tap &kp S>;
+            bindings
+                = <&macro_tap>
+                , <&kp RALT &kp S>
+                ;
         };
 
         u_macro_c_caron: u_macro_c_caron {
             compatible = "zmk,behavior-macro";
-            label = "C_CARON";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RALT>, <&macro_tap &kp C>, <&macro_release &kp RALT>, <&macro_tap &kp C>;
+            bindings
+                = <&macro_tap>
+                , <&kp RALT &kp C>
+                ;
         };
 
         u_macro_z_caron: u_macro_z_caron {
             compatible = "zmk,behavior-macro";
-            label = "Z_CARON";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RALT>, <&macro_tap &kp Z>, <&macro_release &kp RALT>, <&macro_tap &kp Z>;
+            bindings
+                = <&macro_tap>
+                , <&kp RALT &kp Z>
+                ;
         };
 
         u_macro_o_umlaut: u_macro_o_umlaut {
             compatible = "zmk,behavior-macro";
-            label = "O_UMLAUT";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RALT>, <&macro_tap &kp O>, <&macro_release &kp RALT>, <&macro_tap &kp O>;
+            bindings
+                = <&macro_tap>
+                , <&kp RALT &kp O>
+                ;
         };
 
         u_macro_u_umlaut: u_macro_u_umlaut {
             compatible = "zmk,behavior-macro";
-            label = "U_UMLAUT";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp RALT>, <&macro_tap &kp U>, <&macro_release &kp RALT>, <&macro_tap &kp U>;
+            bindings
+                = <&macro_tap>
+                , <&kp RALT &kp U>
+                ;
         };
     };
 };
