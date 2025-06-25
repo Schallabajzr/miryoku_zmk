@@ -4,60 +4,12 @@
 #define XXX &none
 #define ULK &studio_unlock
 
-/ {
-    macros {
-        u_macro_s_caron: u_macro_s_caron {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap>
-                , <&kp RALT &kp S>
-                ;
-        };
 
-        u_macro_c_caron: u_macro_c_caron {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap>
-                , <&kp RALT &kp C>
-                ;
-        };
-
-        u_macro_z_caron: u_macro_z_caron {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap>
-                , <&kp RALT &kp Z>
-                ;
-        };
-
-        u_macro_o_umlaut: u_macro_o_umlaut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap>
-                , <&kp RALT &kp O>
-                ;
-        };
-
-        u_macro_u_umlaut: u_macro_u_umlaut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap>
-                , <&kp RALT &kp U>
-                ;
-        };
-    };
-};
-
-#define S_CARON     &u_macro_s_caron
-#define C_CARON     &u_macro_c_caron
-#define Z_CARON     &u_macro_z_caron
-#define O_UMLAUT    &u_macro_o_umlaut
-#define U_UMLAUT    &u_macro_u_umlaut
+#define S_CARON     XXX
+#define C_CARON     XXX
+#define Z_CARON     XXX
+#define O_UMLAUT    XXX
+#define U_UMLAUT    XXX
 
 #define MIRYOKU_LAYER_EURKEY \
 XXX,XXX,XXX,XXX,XXX,XXX,XXX,U_UMLAUT,XXX,XXX, \
