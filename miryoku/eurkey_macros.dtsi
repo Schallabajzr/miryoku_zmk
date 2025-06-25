@@ -11,8 +11,8 @@
 			bindings = <
 				&macro_press &kp RALT &kp LSHFT
 				&macro_tap &kp N6
-				&macro_release &kp RALT &kp LSHFT
 				&macro_tap &kp MACRO_PLACEHOLDER
+				&macro_release &kp RALT &kp LSHFT
 			>;
 		};
 
@@ -25,8 +25,8 @@
 			bindings = <
 				&macro_press &kp RALT &kp LSHFT
 				&macro_tap &kp APOS
-				&macro_release &kp RALT &kp LSHFT
 				&macro_tap &kp MACRO_PLACEHOLDER
+				&macro_release &kp RALT &kp LSHFT
 			>;
 		};
 	};
