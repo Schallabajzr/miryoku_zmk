@@ -4,6 +4,45 @@
 #define XXX &none
 #define ULK &studio_unlock
 
+/ {
+    macros {
+        u_macro_s_caron: u_macro_s_caron {
+            compatible = "zmk,behavior-macro";
+            label = "S_CARON";
+            #binding-cells = <0>;
+            bindings = <&kp RA(S) &kp S>;  // AltGr+S followed by S for š
+        };
+
+        u_macro_c_caron: u_macro_c_caron {
+            compatible = "zmk,behavior-macro";
+            label = "C_CARON";
+            #binding-cells = <0>;
+            bindings = <&kp RA(C) &kp C>;  // AltGr+C followed by C for č
+        };
+
+        u_macro_z_caron: u_macro_z_caron {
+            compatible = "zmk,behavior-macro";
+            label = "Z_CARON";
+            #binding-cells = <0>;
+            bindings = <&kp RA(Z) &kp Z>;  // AltGr+Z followed by Z for ž
+        };
+
+        u_macro_o_umlaut: u_macro_o_umlaut {
+            compatible = "zmk,behavior-macro";
+            label = "O_UMLAUT";
+            #binding-cells = <0>;
+            bindings = <&kp RA(O) &kp O>;  // AltGr+O followed by O for ö
+        };
+
+        u_macro_u_umlaut: u_macro_u_umlaut {
+            compatible = "zmk,behavior-macro";
+            label = "U_UMLAUT";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U) &kp U>;  // AltGr+U followed by U for ü
+        };
+    };
+};
+
 #define S_CARON     &u_macro_s_caron
 #define C_CARON     &u_macro_c_caron
 #define Z_CARON     &u_macro_z_caron
