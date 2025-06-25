@@ -10,35 +10,35 @@
             compatible = "zmk,behavior-macro";
             label = "S_CARON";
             #binding-cells = <0>;
-            bindings = <&kp RA(S) &kp S>;  // AltGr+S followed by S for š
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp S>, <&macro_release &kp RALT>, <&macro_tap &kp S>;
         };
 
         u_macro_c_caron: u_macro_c_caron {
             compatible = "zmk,behavior-macro";
             label = "C_CARON";
             #binding-cells = <0>;
-            bindings = <&kp RA(C) &kp C>;  // AltGr+C followed by C for č
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp C>, <&macro_release &kp RALT>, <&macro_tap &kp C>;
         };
 
         u_macro_z_caron: u_macro_z_caron {
             compatible = "zmk,behavior-macro";
             label = "Z_CARON";
             #binding-cells = <0>;
-            bindings = <&kp RA(Z) &kp Z>;  // AltGr+Z followed by Z for ž
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp Z>, <&macro_release &kp RALT>, <&macro_tap &kp Z>;
         };
 
         u_macro_o_umlaut: u_macro_o_umlaut {
             compatible = "zmk,behavior-macro";
             label = "O_UMLAUT";
             #binding-cells = <0>;
-            bindings = <&kp RA(O) &kp O>;  // AltGr+O followed by O for ö
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp O>, <&macro_release &kp RALT>, <&macro_tap &kp O>;
         };
 
         u_macro_u_umlaut: u_macro_u_umlaut {
             compatible = "zmk,behavior-macro";
             label = "U_UMLAUT";
             #binding-cells = <0>;
-            bindings = <&kp RA(U) &kp U>;  // AltGr+U followed by U for ü
+            bindings = <&macro_press &kp RALT>, <&macro_tap &kp U>, <&macro_release &kp RALT>, <&macro_tap &kp U>;
         };
     };
 };
