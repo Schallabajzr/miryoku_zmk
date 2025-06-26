@@ -7,13 +7,11 @@
  * The hack is to unpress RALT before sending the dead key and next key, then press it again.
  */
 #define DEADKEY_MACRO(NAME, DEADKEY, NEXTKEY) ZMK_MACRO(NAME, \
-    bindings = <&macro_release &kp RALT>, <&macro_tap &kp DEADKEY &kp NEXTKEY>, <&macro_press &kp RALT>; \
-)
+    bindings = <&macro_release &kp RALT>, <&macro_tap &kp DEADKEY &kp NEXTKEY>, <&macro_press &kp RALT>;)
 
 #define DEADKEY_MODMORPH(NAME, LOWER, UPPER) ZMK_MOD_MORPH(NAME, \
     bindings = <LOWER>, <UPPER>; \
-    mods = <(MOD_LSFT | MOD_RSFT)>; \
-)
+    mods = <(MOD_LSFT | MOD_RSFT)>;)
 
 #define DEADKEY(NAME, DEADKEY, LETTER) \
     DEADKEY_MACRO(NAME ## _lower, DEADKEY, LETTER) \
