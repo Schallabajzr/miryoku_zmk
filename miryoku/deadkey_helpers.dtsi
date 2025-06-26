@@ -1,7 +1,106 @@
 // Eurkey dead letter definitions
 
-DEADKEY(c_caron, RA(LS(N6)), C)
-DEADKEY(s_caron, RA(LS(N6)), C)
-DEADKEY(z_caron, RA(LS(N6)), Z)
-DEADKEY(o_umlaut, RA(LS(APOS)), O)
-DEADKEY(u_umlaut, RA(LS(APOS)), U)
+// Deadkey helpers for Slovenian/Czech characters
+// Usage: Add this to your keymap's behaviors section
+
+/ {
+	macros {
+		// Č/č - c with caron
+		c_caron_lower: c_caron_lower {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp C>, <&macro_press &kp RALT>;
+		};
+		c_caron_upper: c_caron_upper {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp LS(C)>, <&macro_press &kp RALT>;
+		};
+
+		// Š/š - s with caron
+		s_caron_lower: s_caron_lower {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp S>, <&macro_press &kp RALT>;
+		};
+		s_caron_upper: s_caron_upper {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp LS(S)>, <&macro_press &kp RALT>;
+		};
+
+		// Ž/ž - z with caron
+		z_caron_lower: z_caron_lower {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp Z>, <&macro_press &kp RALT>;
+		};
+		z_caron_upper: z_caron_upper {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp LS(Z)>, <&macro_press &kp RALT>;
+		};
+
+		// Ö/ö - o with umlaut
+		o_umlaut_lower: o_umlaut_lower {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(APOS)) &kp O>, <&macro_press &kp RALT>;
+		};
+		o_umlaut_upper: o_umlaut_upper {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(APOS)) &kp LS(O)>, <&macro_press &kp RALT>;
+		};
+
+		// Ü/ü - u with umlaut
+		u_umlaut_lower: u_umlaut_lower {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(APOS)) &kp U>, <&macro_press &kp RALT>;
+		};
+		u_umlaut_upper: u_umlaut_upper {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(APOS)) &kp LS(U)>, <&macro_press &kp RALT>;
+		};
+	};
+
+	behaviors {
+		// Mod-morphs that switch between lower/upper case based on shift
+		c_caron: c_caron {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&c_caron_lower>, <&c_caron_upper>;
+			mods = <(MOD_LSFT | MOD_RSFT)>;
+		};
+
+		s_caron: s_caron {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&s_caron_lower>, <&s_caron_upper>;
+			mods = <(MOD_LSFT | MOD_RSFT)>;
+		};
+
+		z_caron: z_caron {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&z_caron_lower>, <&z_caron_upper>;
+			mods = <(MOD_LSFT | MOD_RSFT)>;
+		};
+
+		o_umlaut: o_umlaut {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&o_umlaut_lower>, <&o_umlaut_upper>;
+			mods = <(MOD_LSFT | MOD_RSFT)>;
+		};
+
+		u_umlaut: u_umlaut {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&u_umlaut_lower>, <&u_umlaut_upper>;
+			mods = <(MOD_LSFT | MOD_RSFT)>;
+		};
+	};
+};
