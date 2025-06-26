@@ -9,60 +9,60 @@
 		c_caron_lower: c_caron_lower {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp C>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(N6)) &kp C>;
 		};
 		c_caron_upper: c_caron_upper {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp LS(C)>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(N6)) &kp LS(C)>;
 		};
 
 		// Š/š - s with caron
 		s_caron_lower: s_caron_lower {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp S>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(N6)) &kp S>;
 		};
 		s_caron_upper: s_caron_upper {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp LS(S)>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(N6)) &kp LS(S)>;
 		};
 
 		// Ž/ž - z with caron
 		z_caron_lower: z_caron_lower {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp Z>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(N6)) &kp Z>;
 		};
 		z_caron_upper: z_caron_upper {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(N6)) &kp LS(Z)>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(N6)) &kp LS(Z)>;
 		};
 
 		// Ö/ö - o with umlaut
 		o_umlaut_lower: o_umlaut_lower {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(APOS)) &kp O>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(APOS)) &kp O>;
 		};
 		o_umlaut_upper: o_umlaut_upper {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(APOS)) &kp LS(O)>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(APOS)) &kp LS(O)>;
 		};
 
 		// Ü/ü - u with umlaut
 		u_umlaut_lower: u_umlaut_lower {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(APOS)) &kp U>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(APOS)) &kp U>;
 		};
 		u_umlaut_upper: u_umlaut_upper {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_release &kp RALT>, <&macro_tap &kp RA(LS(APOS)) &kp LS(U)>, <&macro_press &kp RALT>;
+			bindings = <&kp RA(LS(APOS)) &kp LS(U)>;
 		};
 	};
 
