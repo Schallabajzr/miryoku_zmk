@@ -17,3 +17,9 @@
     DEADKEY_MACRO(NAME ## _lower, DEADKEY, LETTER) \
     DEADKEY_MACRO(NAME ## _upper, DEADKEY, LS(LETTER)) \
     DEADKEY_MODMORPH(NAME, &NAME ## _lower, &NAME ## _upper)
+
+#define DEADKEY(c_caron, RA(LS(N6)), C)
+#define DEADKEY(s_caron, RA(LS(N6)), C)
+#define DEADKEY(z_caron, RA(LS(N6)), Z)
+#define DEADKEY(o_umlaut, RA(LS(APOS)), O)
+#define DEADKEY(u_umlaut, RA(LS(APOS)), U)

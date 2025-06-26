@@ -4,11 +4,11 @@
 #define XXX &none
 #define ULK &studio_unlock
 
-#define S_CARON    DEADKEY(s_caron, RA(LS(N6)), S)
-#define C_CARON    DEADKEY(c_caron, RA(LS(N6)), C)
-#define Z_CARON    DEADKEY(z_caron, RA(LS(N6)), Z)
-#define O_UMLAUT    DEADKEY(o_umlaut, RA(LS(APOS)), O)
-#define U_UMLAUT   DEADKEY(u_umlaut, RA(LS(APOS)), U)
+#define S_CARON     &carons
+#define C_CARON     &carons
+#define Z_CARON     &carons
+#define O_UMLAUT    &umlauts
+#define U_UMLAUT    &umlauts
 
 #define MIRYOKU_LAYER_EURKEY \
 XXX,XXX,XXX,XXX,XXX,XXX,XXX,U_UMLAUT,XXX,XXX, \
