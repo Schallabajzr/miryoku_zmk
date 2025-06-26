@@ -1,33 +1,7 @@
-/ {
-	macros {
-		compatible = "zmk,macros";
+#include "deadkey_helpers.h"
 
-		carons: caron_macro {
-			compatible = "zmk,behavior-macro-one-param";
-			label = "Caron Macro";
-			#binding-cells = <1>;
-			wait-ms = <20>;
-			tap-ms = <30>;
-			bindings = <
-				&macro_press &kp RALT &kp LSHFT
-				&macro_tap &kp N6
-				&macro_tap &kp MACRO_PLACEHOLDER
-				&macro_release &kp RALT &kp LSHFT
-			>;
-		};
-
-		umlauts: umlaut_macro {
-			compatible = "zmk,behavior-macro-one-param";
-			label = "Umlaut Macro";
-			#binding-cells = <1>;
-			wait-ms = <20>;
-			tap-ms = <30>;
-			bindings = <
-				&macro_press &kp RALT &kp LSHFT
-				&macro_tap &kp APOS
-				&macro_tap &kp MACRO_PLACEHOLDER
-				&macro_release &kp RALT &kp LSHFT
-			>;
-		};
-	};
-};
+DEADKEY(s_caron, RA(LS(N6)), S)
+DEADKEY(c_caron, RA(LS(N6)), C)
+DEADKEY(z_caron, RA(LS(N6)), Z)
+DEADKEY(o_umlaut, RA(LS(APOS)), O)
+DEADKEY(u_umlaut, RA(LS(APOS)), U)
