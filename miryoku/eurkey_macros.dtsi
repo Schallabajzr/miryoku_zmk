@@ -1,5 +1,3 @@
-#include "deadkey_helpers.h"
-
 DEADKEY(s_caron, RA(LS(N6)), S)
 DEADKEY(c_caron, RA(LS(N6)), C)
 DEADKEY(z_caron, RA(LS(N6)), Z)
