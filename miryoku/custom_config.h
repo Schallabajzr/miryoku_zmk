@@ -4,6 +4,27 @@
 #define XXX &none
 #define ULK &studio_unlock
 
+#define DEADKEY_MACRO(NAME, DEADKEY, NEXTKEY) ZMK_MACRO(NAME, \
+    bindings = <&macro_release &kp RALT>, <&macro_tap &kp DEADKEY &kp NEXTKEY>, <&macro_press &kp RALT>; \
+)
+
+#define DEADKEY_MODMORPH(NAME, LOWER, UPPER) ZMK_MOD_MORPH(NAME, \
+    bindings = <LOWER>, <UPPER>; \
+    mods = <(MOD_LSFT | MOD_RSFT)>; \
+)
+
+#define DEADKEY(NAME, DEADKEY, LETTER) \
+    DEADKEY_MACRO(NAME ## _lower, DEADKEY, LETTER) \
+    DEADKEY_MACRO(NAME ## _upper, DEADKEY, LS(LETTER)) \
+    DEADKEY_MODMORPH(NAME, &NAME ## _lower, &NAME ## _upper)
+
+
+DEADKEY(c_caron, RA(LS(N6)), C)
+DEADKEY(s_caron, RA(LS(N6)), C)
+DEADKEY(z_caron, RA(LS(N6)), Z)
+DEADKEY(o_umlaut, RA(LS(APOS)), O)
+DEADKEY(u_umlaut, RA(LS(APOS)), U)
+
 #define S_CARON     &carons
 #define C_CARON     &carons
 #define Z_CARON     &carons

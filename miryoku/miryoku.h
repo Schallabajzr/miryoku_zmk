@@ -33,8 +33,6 @@
 
 #include "miryoku_mousekeys.h"
 
-#include "deadkey_helpers.h"
-
 #if defined (MIRYOKU_KLUDGE_TAPDELAY)
   #include "miryoku_kludge_tapdelay.h"
 #else

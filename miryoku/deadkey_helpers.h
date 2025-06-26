@@ -18,8 +18,3 @@
     DEADKEY_MACRO(NAME ## _upper, DEADKEY, LS(LETTER)) \
     DEADKEY_MODMORPH(NAME, &NAME ## _lower, &NAME ## _upper)
 
-DEADKEY(c_caron, RA(LS(N6)), C)
-DEADKEY(s_caron, RA(LS(N6)), C)
-DEADKEY(z_caron, RA(LS(N6)), Z)
-DEADKEY(o_umlaut, RA(LS(APOS)), O)
-DEADKEY(u_umlaut, RA(LS(APOS)), U)
